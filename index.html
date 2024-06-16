@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Elements</title>
+  </head>
+  <body>
+    <form>
+      <label for="football_teams">Choose a football team:</label>
+      <select name="football_team" id="football_team">
+        <option value="manchester City">Manchester City</option>
+        <option value="chelsea">Chelsea</option>
+        <option value="arsenal">Arsenal</option>
+        <option value="liverpool">Liverpool</option>
+        <option value="manchester_united">Manchester United</option>
+      </select>
+      <button id="Submit" type="submit" onclick="doSomething()">Submit</button>
+      <p id="test">Football club</p>
+      <script>
+        function doSomething() {
+          document.getElementById("test").innerHTML =
+            "My favorite football club";
+        }
+      </script>
+    </form>
+  </body>
+</html>
